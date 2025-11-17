@@ -1,0 +1,41 @@
+:root{
+    --bg:#f6f8fb;
+    --card:#ffffff;
+    --muted:#7b7f87;
+    --accent:#2b6ef6;
+    --success:#1e9a6a;
+    --danger:#e05b5b;
+  }
+  *{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+  body{margin:0;background:var(--bg);color:#0b1220}
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:linear-gradient(90deg,#fff,#f3f6ff);box-shadow:0 1px 0 rgba(20,20,20,0.03)}
+  .brand{font-weight:700}
+  .tag{background:#fde68a;color:#7a4f01;padding:4px 8px;border-radius:6px;font-size:12px;margin-left:8px}
+  .container{max-width:1000px;margin:28px auto;padding:0 16px}
+  .notice{background:linear-gradient(90deg,#fff7ed,#fff);padding:12px;border-left:4px solid #f59e0b;border-radius:8px;margin-bottom:14px}
+  .panel.auth-panel{display:flex;gap:18px;align-items:flex-start}
+  .panel .col{background:var(--card);padding:18px;border-radius:10px;flex:1;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+  .panel h3{margin:0 0 12px 0}
+  input,select{display:block;width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e6e9ef}
+  button{background:var(--accent);color:white;border:none;padding:10px 14px;border-radius:9px;cursor:pointer}
+  button.secondary{background:transparent;color:var(--accent);border:1px solid #dbe6ff}
+  .muted{color:var(--muted);font-size:13px}
+  
+  .hidden{display:none}
+  
+  .toolbar{display:flex;justify-content:space-between;align-items:center;margin:18px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 8px 20px rgba(15,23,42,0.04)}
+  .card h4{margin:0 0 8px}
+  .card .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+  .card .actions{display:flex;gap:8px;flex-wrap:wrap}
+  .btn-small{padding:6px 8px;border-radius:8px;border:none;cursor:pointer}
+  .btn-approve{background:var(--success);color:#fff}
+  .btn-complete{background:var(--accent);color:#fff}
+  .badge{display:inline-block;padding:6px 8px;border-radius:8px;font-weight:600;font-size:13px}
+  .badge.pending{background:#fff3cd;color:#7a531e}
+  .badge.approved{background:#ecfdf5;color:#046c4b}
+  .badge.completed{background:#eef2ff;color:#2b2fb8}
+  
+  .footer{padding:12px;text-align:center;color:var(--muted);margin-top:28px}
+  

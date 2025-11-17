@@ -1,0 +1,6 @@
+Flask==2.3.2
+Flask-Cors==3.0.10
+SQLAlchemy==1.4.50
+PyJWT==2.8.0
+python-dotenv==1.0.0
+Werkzeug==2.3.7

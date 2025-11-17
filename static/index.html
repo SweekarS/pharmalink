@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PharmaLink — Demo</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PharmaLink <span class="tag">DEMO</span></div>
+    <div id="auth-area"></div>
+  </header>
+
+  <main class="container">
+    <section class="notice">
+      <strong>DEMO — For legal reasons:</strong> This app contains mock patient information and is for demonstration only. Do not use for real PHI.
+    </section>
+
+    <section class="panel auth-panel" id="auth-panel">
+      <div class="col">
+        <h3>Sign In</h3>
+        <input id="login-email" placeholder="Email" />
+        <input id="login-password" placeholder="Password" type="password" />
+        <button id="btn-login">Sign in</button>
+        <p class="muted">Demo accounts: <code>doctor@demo.com</code> & <code>pharm@demo.com</code> (password: <code>password</code>)</p>
+      </div>
+
+      <div class="col">
+        <h3>Create Account</h3>
+        <input id="reg-name" placeholder="Full name" />
+        <input id="reg-email" placeholder="Email" />
+        <input id="reg-password" placeholder="Password" type="password" />
+        <select id="reg-role">
+          <option value="doctor">Doctor</option>
+          <option value="pharmacist">Pharmacist</option>
+        </select>
+        <button id="btn-register">Create account</button>
+      </div>
+    </section>
+
+    <section id="app" class="hidden">
+      <div class="toolbar">
+        <div>
+          <select id="from-pharm"></select>
+          <select id="to-pharm"></select>
+          <input id="patient-name" placeholder="Patient name" />
+          <input id="medication" placeholder="Medication" />
+          <button id="create-transfer">Create Transfer</button>
+        </div>
+        <div id="me-info"></div>
+      </div>
+
+      <div id="transfers" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>PharmaLink • Minimal demo</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
